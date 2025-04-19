@@ -140,6 +140,13 @@ header {
     top: 0;
     z-index: 100;
     padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -362,7 +369,8 @@ nav ul li a:hover::after {
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -375,6 +383,11 @@ nav ul li a:hover::after {
     background-color: var(--secondary-color);
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
 }
 
 /* Project images - in a real implementation, use actual project images */
@@ -636,6 +649,12 @@ footer {
         z-index: -1;
     }
 
+    nav ul.show {
+        transform: translateY(0);
+        opacity: 1;
+        z-index: 1;
+    }
+
     .nav-toggle:checked ~ ul {
         transform: translateY(0);
         opacity: 1;
@@ -687,5 +706,23 @@ footer {
 
     .social-icons {
         justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 }
