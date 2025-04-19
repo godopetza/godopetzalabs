@@ -6,18 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Godopetza Labs Company Limited</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1>Godopetza Labs</h1>
+            <div class="logo">
+                <h1>Godopetza<span>Labs</span></h1>
+            </div>
             <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,62 +39,163 @@
     <main>
         <section id="hero">
             <div class="container">
-                <h2>Innovative Software Solutions for East Africa</h2>
-                <p style="color: burlywood;">Full-stack and backend software development for businesses and startups</p>
+                <div class="hero-content">
+                    <h2>Innovative Software Solutions for East Africa</h2>
+                    <p>Full-stack and backend software development for businesses and startups</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn-primary">Our Services</a>
+                        <a href="#projects" class="btn-secondary">View Projects</a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="about">
             <div class="container">
-                <h2>About Godopetza Labs</h2>
-                <p>Godopetza Labs is a leading software development company based in Tanzania. We specialize in creating
-                    innovative, full-stack solutions for businesses across East Africa. Our team of expert developers is
-                    committed to delivering high-quality, custom software that meets the unique needs of our clients.
-                </p>
+                <div class="section-header">
+                    <h2>About Godopetza Labs</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Godopetza Labs is a leading software development company based in Tanzania. We specialize in
+                            creating
+                            innovative, full-stack solutions for businesses across East Africa. Our team of expert
+                            developers is
+                            committed to delivering high-quality, custom software that meets the unique needs of our
+                            clients.</p>
+                        <p>With a focus on modern technologies and agile methodology, we ensure efficient delivery of
+                            solutions that
+                            drive business growth and digital transformation.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <i class="fas fa-code"></i>
+                            <h3>20+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-box">
+                            <i class="fas fa-users"></i>
+                            <h3>10+</h3>
+                            <p>Team Members</p>
+                        </div>
+                        <div class="stat-box">
+                            <i class="fas fa-building"></i>
+                            <h3>15+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="services">
             <div class="container">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Full-stack Development</li>
-                    <li>Backend Solutions</li>
-                    <li>Mobile App Development</li>
-                    <li>Web Application Design</li>
-                    <li>AI Integration</li>
-                    <li>EdTech Solutions</li>
-                </ul>
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Full-stack Development</h3>
+                        <p>Comprehensive end-to-end solutions from frontend to backend</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Solutions</h3>
+                        <p>Robust, scalable server-side applications and APIs</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Native and cross-platform mobile applications</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Web Application Design</h3>
+                        <p>User-centered, responsive web interfaces</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Integration</h3>
+                        <p>Intelligent features and algorithms for your applications</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>EdTech Solutions</h3>
+                        <p>Educational technology platforms and learning tools</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projects">
             <div class="container">
-                <h2>Featured Projects</h2>
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <div class="underline"></div>
+                </div>
                 <div class="project-grid">
-                    <div class="project">
-                        <h3>BibleASK</h3>
-                        <p>AI-powered Bible study assistant</p>
+                    <div class="project-card">
+                        <div class="project-image p1"></div>
+                        <div class="project-info">
+                            <h3>BibleASK</h3>
+                            <p>AI-powered Bible study assistant</p>
+                            <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <div class="project">
-                        <h3>UlizaBiblia</h3>
-                        <p>Interactive Bible exploration tool</p>
+                    <div class="project-card">
+                        <div class="project-image p2"></div>
+                        <div class="project-info">
+                            <h3>UlizaBiblia</h3>
+                            <p>Interactive Bible exploration tool</p>
+                            <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <div class="project">
-                        <h3>HadithiZetu</h3>
-                        <p>Digital storytelling platform</p>
+                    <div class="project-card">
+                        <div class="project-image p3"></div>
+                        <div class="project-info">
+                            <h3>HadithiZetu</h3>
+                            <p>Digital storytelling platform</p>
+                            <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <div class="project">
-                        <h3>RafikiSpace</h3>
-                        <p>Social networking application</p>
+                    <div class="project-card">
+                        <div class="project-image p4"></div>
+                        <div class="project-info">
+                            <h3>RafikiSpace</h3>
+                            <p>Social networking application</p>
+                            <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <div class="project">
-                        <h3>FlutterAI</h3>
-                        <p>AI-powered Flutter development tool</p>
+                    <div class="project-card">
+                        <div class="project-image p5"></div>
+                        <div class="project-info">
+                            <h3>FlutterAI</h3>
+                            <p>AI-powered Flutter development tool</p>
+                            <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <div class="project">
-                        <h3>SATU (Silabu's AI Tutor)</h3>
-                        <p>AI-driven educational platform</p>
+                    <div class="project-card">
+                        <div class="project-image p6"></div>
+                        <div class="project-info">
+                            <h3>SATU (Silabu's AI Tutor)</h3>
+                            <p>AI-driven educational platform</p>
+                            <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,27 +203,99 @@
 
         <section id="clients">
             <div class="container">
-                <h2>Our Clients</h2>
-                <ul>
-                    <li>Travve</li>
-                    <li>Silabu</li>
-                    <li>MTABE</li>
-                </ul>
+                <div class="section-header">
+                    <h2>Our Clients</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <div class="client-logo">T</div>
+                        <h3>Travve</h3>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">S</div>
+                        <h3>Silabu</h3>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">M</div>
+                        <h3>MTABE</h3>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
-                <h2>Contact Us</h2>
-                <p>Ready to bring your software ideas to life? Get in touch with Godopetza Labs today!</p>
-                <a href="mailto:andrewbenard7+godopetzalabs@gmail.com" class="cta-button">Email Us</a>
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>Ready to bring your software ideas to life? Get in touch with Godopetza Labs today!</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:andrewbenard7+godopetzalabs@gmail.com">Email Us</a>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+255749409123">Call Us</a>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Dar es Salaam, Tanzania</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Godopetza Labs Company Limited. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Godopetza<span>Labs</span></h2>
+                    <p>Innovative Software Solutions for East Africa</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Godopetza Labs Company Limited. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
