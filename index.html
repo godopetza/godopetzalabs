@@ -4,31 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Godopetza Labs Company Limited</title>
+    <title>Godopetza Labs — Software Studio for East Africa</title>
+    <meta name="description"
+        content="Godopetza Labs is a Tanzanian software studio building full-stack, mobile, and backend products for businesses and startups across East Africa.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>Godopetza<span>Labs</span></h1>
-            </div>
+            <a href="#hero" class="logo">Godopetza<span>Labs</span></a>
             <nav>
                 <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <label for="nav-toggle" class="nav-toggle-label">
+                <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
                     <i class="fas fa-bars"></i>
                 </label>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#projects">Work</a></li>
                     <li><a href="#saas">SaaS</a></li>
                     <li><a href="#clients">Clients</a></li>
                     <li><a href="#contact" class="btn-primary">Contact Us</a></li>
@@ -41,11 +42,21 @@
         <section id="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h2>Innovative Software Solutions for East Africa</h2>
-                    <p>Full-stack and backend software development for businesses and startups</p>
+                    <span class="hero-eyebrow"><span class="dot"></span>Software studio · Dar es Salaam, Tanzania</span>
+                    <h2>We build software<br>East Africa <em>actually uses</em></h2>
+                    <p>Godopetza Labs is a Tanzanian studio shipping full-stack, mobile, and backend products
+                        for businesses and startups — from story marketplaces and card games to CRMs and
+                        payment-driven platforms.</p>
                     <div class="hero-buttons">
-                        <a href="#services" class="btn-primary">Our Services</a>
-                        <a href="#projects" class="btn-secondary">View Projects</a>
+                        <a href="#projects" class="btn-primary">See our work</a>
+                        <a href="#contact" class="btn-ghost">Start a project</a>
+                    </div>
+                    <div class="hero-marquee">
+                        <span><i class="fas fa-mobile-screen"></i> Mobile</span>
+                        <span><i class="fas fa-globe"></i> Web</span>
+                        <span><i class="fas fa-server"></i> Backend &amp; APIs</span>
+                        <span><i class="fas fa-robot"></i> AI</span>
+                        <span><i class="fas fa-credit-card"></i> Mobile-money payments</span>
                     </div>
                 </div>
             </div>
@@ -54,36 +65,33 @@
         <section id="about">
             <div class="container">
                 <div class="section-header">
-                    <h2>About Godopetza Labs</h2>
-                    <div class="underline"></div>
+                    <span class="eyebrow">01 — About</span>
+                    <h2>A small team, real products</h2>
                 </div>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Godopetza Labs is a leading software development company based in Tanzania. We specialize in
-                            creating
-                            innovative, full-stack solutions for businesses across East Africa. Our team of expert
-                            developers is
-                            committed to delivering high-quality, custom software that meets the unique needs of our
-                            clients.</p>
-                        <p>With a focus on modern technologies and agile methodology, we ensure efficient delivery of
-                            solutions that
-                            drive business growth and digital transformation.</p>
+                        <p>Godopetza Labs is a software studio based in Dar es Salaam. We design and build
+                            innovative, full-stack solutions for businesses across East Africa, and ship our own
+                            products live on Google Play and the App Store.</p>
+                        <p>We work in modern stacks with an agile, ship-often approach — the kind of software that
+                            handles <strong>payments, stories, weddings, and everyday money</strong>, and holds up
+                            in production.</p>
                     </div>
                     <div class="about-stats">
                         <div class="stat-box">
                             <i class="fas fa-code"></i>
                             <h3>20+</h3>
-                            <p>Projects Completed</p>
+                            <p>Projects shipped</p>
                         </div>
                         <div class="stat-box">
                             <i class="fas fa-calendar-alt"></i>
                             <h3>4+</h3>
-                            <p>Years Experience</p>
+                            <p>Years building</p>
                         </div>
                         <div class="stat-box">
-                            <i class="fas fa-building"></i>
+                            <i class="fas fa-users"></i>
                             <h3>15+</h3>
-                            <p>Happy Clients</p>
+                            <p>Clients served</p>
                         </div>
                     </div>
                 </div>
@@ -93,51 +101,39 @@
         <section id="services">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our Services</h2>
-                    <div class="underline"></div>
+                    <span class="eyebrow">02 — Services</span>
+                    <h2>What we do</h2>
                 </div>
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Full-stack Development</h3>
-                        <p>Comprehensive end-to-end solutions from frontend to backend</p>
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Full-stack development</h3>
+                        <p>End-to-end solutions, from frontend interfaces to the systems behind them.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Backend Solutions</h3>
-                        <p>Robust, scalable server-side applications and APIs</p>
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend &amp; APIs</h3>
+                        <p>Robust, scalable server-side applications and APIs built to last.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Mobile App Development</h3>
-                        <p>Native and cross-platform mobile applications</p>
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile app development</h3>
+                        <p>Native and cross-platform apps for Android and iOS, store-ready.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h3>Web Application Design</h3>
-                        <p>User-centered, responsive web interfaces</p>
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Web application design</h3>
+                        <p>User-centered, responsive web interfaces that feel effortless.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>AI Integration</h3>
-                        <p>Intelligent features and algorithms for your applications</p>
+                        <div class="service-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI integration</h3>
+                        <p>Intelligent features and workflows woven into your product.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>EdTech Solutions</h3>
-                        <p>Educational technology platforms and learning tools</p>
+                        <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>EdTech solutions</h3>
+                        <p>Educational platforms and learning tools for schools and tutors.</p>
                     </div>
                 </div>
             </div>
@@ -146,193 +142,213 @@
         <section id="projects">
             <div class="container">
                 <div class="section-header">
-                    <h2>Featured Projects</h2>
-                    <div class="underline"></div>
+                    <span class="eyebrow">03 — Work</span>
+                    <h2>Featured projects</h2>
                 </div>
                 <div class="project-grid">
-                    <div class="project-card featured-card" onclick="window.open('https://play.google.com/store/apps/details?id=dev.flutterai.hadithizetuapp', '_blank')">
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="img/hadithizetu.png" alt="Hadithi Zetu"
-                                style="width:90%;height:180px;object-fit:contain;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.08);background:#fff;"
-                                loading="lazy">
+                    <article class="project-card featured-card"
+                        onclick="window.open('https://karata.uk', '_blank')">
+                        <span class="card-badge">New</span>
+                        <div class="project-image brand">
+                            <img src="img/karata-icon.png" alt="Karata — Last Card" loading="lazy">
                         </div>
                         <div class="project-info">
+                            <span class="cat">Mobile · Web · Game</span>
+                            <h3>Karata — Last Card</h3>
+                            <p>A fast, social shedding card game (Kadi Moja) built in Flutter. Play clever AI solo or
+                                invite friends with a room code across iOS, Android, and web.</p>
+                            <div class="project-links">
+                                <a href="https://karata.uk/play/" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-play"></i> Play on web</a>
+                                <a href="https://karata.uk" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> karata.uk</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card featured-card"
+                        onclick="window.open('https://play.google.com/store/apps/details?id=dev.flutterai.hadithizetuapp', '_blank')">
+                        <span class="card-badge">Featured</span>
+                        <div class="project-image">
+                            <img src="img/hadithizetu.png" alt="Hadithi Zetu" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <span class="cat">SaaS · Mobile · Web</span>
                             <h3>Hadithi Zetu</h3>
-                            <p>Digital marketplace for African stories. Read, sell, and buy premium written & audio content with M-Pesa, Airtel payments, creator subscriptions, tips, and WhatsApp delivery.</p>
-                            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                            <p>Digital marketplace for African stories — read, sell, and buy premium written &amp;
+                                audio content with M-Pesa/Airtel payments, creator subscriptions, tips, and WhatsApp
+                                delivery.</p>
+                            <div class="project-links">
                                 <a href="https://play.google.com/store/apps/details?id=dev.flutterai.hadithizetuapp"
-                                    class="btn-primary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;"
-                                    target="_blank"><i class="fab fa-google-play"></i> Play Store</a>
-                                <a href="https://apps.apple.com/tz/app/hadithizetu/id6760423803"
-                                    class="btn-secondary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;border-width:2px;"
-                                    target="_blank"><i class="fab fa-apple"></i> App Store</a>
-                                <a href="https://hadithizetu.com"
-                                    class="btn-secondary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;border-width:2px;"
-                                    target="_blank"><i class="fas fa-globe"></i> Web</a>
+                                    target="_blank" rel="noopener" onclick="event.stopPropagation()"><i
+                                        class="fab fa-google-play"></i> Play Store</a>
+                                <a href="https://apps.apple.com/tz/app/hadithizetu/id6760423803" target="_blank"
+                                    rel="noopener" onclick="event.stopPropagation()"><i class="fab fa-apple"></i> App
+                                    Store</a>
+                                <a href="https://hadithizetu.com" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> Web</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card featured-card" onclick="window.open('https://shereko.com', '_blank')">
-                        <div class="project-image"
-                            style="background:linear-gradient(135deg,#25D366,#128C7E);padding:0;display:flex;align-items:center;justify-content:center;">
-                            <i class="fab fa-whatsapp" style="font-size:5rem;color:#fff;"></i>
+                    </article>
+
+                    <article class="project-card featured-card"
+                        onclick="window.open('https://shereko.com', '_blank')">
+                        <span class="card-badge">Featured</span>
+                        <div class="project-image whatsapp">
+                            <i class="fab fa-whatsapp"></i>
                         </div>
                         <div class="project-info">
+                            <span class="cat">SaaS · Mobile · Web</span>
                             <h3>Shereko</h3>
-                            <p>Wedding invitation & guest management via WhatsApp. Personalized invitations, RSVP tracking, QR check-in, and Michango contributions via M-Pesa/Airtel. 1,400+ successful weddings.</p>
-                            <div style="display:flex;gap:10px;">
-                                <a href="https://shereko.com"
-                                    class="btn-primary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;"
-                                    target="_blank"><i class="fas fa-globe"></i> shereko.com</a>
+                            <p>Wedding invitation &amp; guest management over WhatsApp — personalized invitations, RSVP
+                                tracking, QR check-in, and Michango contributions via M-Pesa/Airtel.</p>
+                            <div class="project-links">
+                                <a href="https://shereko.com" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> shereko.com</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card" style="position:relative;"
+                    </article>
+
+                    <article class="project-card"
                         onclick="window.open('https://godopetza.github.io/gshotel', '_blank')">
-                        <span
-                            style="position:absolute;top:15px;left:15px;background:linear-gradient(90deg,#0ea5e9,#22c55e);color:#fff;padding:4px 12px;border-radius:20px;font-size:0.85em;font-weight:600;z-index:2;box-shadow:0 2px 8px rgba(14,165,233,0.18);letter-spacing:1px;">HOSPITALITY</span>
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="../gands/assets/welcome.jpg" alt="G &amp; S Executive Lodge"
-                                style="width:90%;height:180px;object-fit:cover;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.12);background:#0d1b2a;"
-                                loading="lazy">
+                        <span class="card-badge">Hospitality</span>
+                        <div class="project-image cover">
+                            <img src="img/gands-lodge.jpg" alt="G &amp; S Executive Lodge" loading="lazy">
                         </div>
                         <div class="project-info">
+                            <span class="cat">Web · Hospitality</span>
                             <h3>G &amp; S Executive Lodge</h3>
-                            <p>Website for a boutique stay 10 minutes from the airport with booking links, WhatsApp/email requests, gallery, and map.</p>
-                            <div style="display:flex;gap:12px;">
-                                <a href="https://godopetza.github.io/gshotel"
-                                    class="btn-primary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;"
-                                    target="_blank"><i class="fas fa-globe"></i> Live Site</a>
+                            <p>Website for a boutique stay 10 minutes from the airport — booking links, WhatsApp/email
+                                requests, gallery, and map.</p>
+                            <div class="project-links">
+                                <a href="https://godopetza.github.io/gshotel" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> Live site</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card" style="position:relative;"
+                    </article>
+
+                    <article class="project-card"
                         onclick="window.open('https://play.google.com/store/apps/details?id=dev.flutterai.inflationdata&hl=en_GB', '_blank')">
-                        <span
-                            style="position:absolute;top:15px;left:15px;background:linear-gradient(90deg,#4e54c8,#8f94fb);color:#fff;padding:4px 12px;border-radius:20px;font-size:0.85em;font-weight:600;z-index:2;box-shadow:0 2px 8px rgba(78,84,200,0.15);letter-spacing:1px;">NEW</span>
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="img/inflationdata.png" alt="InflationData App"
-                                style="width:90%;height:180px;object-fit:contain;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.08);background:#fff;"
-                                loading="lazy">
+                        <div class="project-image">
+                            <img src="img/inflationdata.png" alt="InflationData" loading="lazy">
                         </div>
                         <div class="project-info">
+                            <span class="cat">Mobile app</span>
                             <h3>InflationData</h3>
-                            <p>Track and visualize inflation's impact on your money. Compare currencies, get AI-powered insights, and explore advanced charts.</p>
-                            <div style="display:flex;gap:10px;">
+                            <p>Track and visualize inflation's impact on your money. Compare currencies, get AI-powered
+                                insights, and explore advanced charts.</p>
+                            <div class="project-links">
                                 <a href="https://play.google.com/store/apps/details?id=dev.flutterai.inflationdata&hl=en_GB"
-                                    class="btn-primary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;"
-                                    target="_blank"><i class="fab fa-google-play"></i> Play Store</a>
-                                <a href="https://apps.apple.com/tz/app/inflatationdata/id6746092368"
-                                    class="btn-secondary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;border-width:2px;"
-                                    target="_blank"><i class="fab fa-apple"></i> App Store</a>
+                                    target="_blank" rel="noopener" onclick="event.stopPropagation()"><i
+                                        class="fab fa-google-play"></i> Play Store</a>
+                                <a href="https://apps.apple.com/tz/app/inflatationdata/id6746092368" target="_blank"
+                                    rel="noopener" onclick="event.stopPropagation()"><i class="fab fa-apple"></i> App
+                                    Store</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card" style="position:relative;"
+                    </article>
+
+                    <article class="project-card"
                         onclick="window.open('https://godopetza.github.io/flutter-mini-app-bridge-test/', '_blank')">
-                        <span
-                            style="position:absolute;top:15px;left:15px;background:linear-gradient(90deg,#ff6b35,#f7931e);color:#fff;padding:4px 12px;border-radius:20px;font-size:0.85em;font-weight:600;z-index:2;box-shadow:0 2px 8px rgba(255,107,53,0.15);letter-spacing:1px;">TECH DEMO</span>
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="img/flutter-mini-app-bridge.png" alt="Mini App Bridge Test"
-                                style="width:90%;height:180px;object-fit:contain;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.08);background:#fff;"
-                                loading="lazy">
+                        <span class="card-badge">Tech demo</span>
+                        <div class="project-image">
+                            <img src="img/flutter-mini-app-bridge.png" alt="Super App Mini-App Platform" loading="lazy">
                         </div>
                         <div class="project-info">
+                            <span class="cat">Web ↔ Mobile bridge</span>
                             <h3>Super App Mini-App Platform</h3>
-                            <p>Production-ready mini app ecosystem with JavaScript bridge patterns (WeChat/Alipay style). Open source.</p>
-                            <div style="display:flex;gap:10px;">
-                                <a href="https://godopetza.github.io/flutter-mini-app-bridge-test/"
-                                    class="btn-primary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;"
-                                    target="_blank"><i class="fas fa-globe"></i> Live Demo</a>
-                                <a href="https://github.com/godopetza/flutter-mini-app-bridge-test"
-                                    class="btn-secondary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;border-width:2px;"
-                                    target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <p>Production-ready mini-app ecosystem with JavaScript bridge patterns (WeChat/Alipay
+                                style). Open source.</p>
+                            <div class="project-links">
+                                <a href="https://godopetza.github.io/flutter-mini-app-bridge-test/" target="_blank"
+                                    rel="noopener" onclick="event.stopPropagation()"><i class="fas fa-globe"></i> Live
+                                    demo</a>
+                                <a href="https://github.com/godopetza/flutter-mini-app-bridge-test" target="_blank"
+                                    rel="noopener" onclick="event.stopPropagation()"><i class="fab fa-github"></i>
+                                    GitHub</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card" onclick="window.open('https://sgrtiketiwebapp.vercel.app', '_blank')">
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="img/sgrtiketi.png" alt="SGR SMS TIKETI"
-                                style="width:90%;height:180px;object-fit:contain;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.08);background:#fff;"
-                                loading="lazy">
+                    </article>
+
+                    <article class="project-card"
+                        onclick="window.open('https://sgrtiketiwebapp.vercel.app', '_blank')">
+                        <div class="project-image">
+                            <img src="img/sgrtiketi.png" alt="SGR SMS Tiketi" loading="lazy">
                         </div>
                         <div class="project-info">
-                            <h3>SGR SMS TIKETI</h3>
-                            <p>Make train tickets from SMS notifications</p>
-                            <a href="https://sgrtiketiwebapp.vercel.app/" class="btn-text" target="_blank">Learn More <i
-                                    class="fas fa-arrow-right"></i></a>
+                            <span class="cat">Web app</span>
+                            <h3>SGR SMS Tiketi</h3>
+                            <p>Turn SMS notifications into train tickets for Tanzania's Standard Gauge Railway.</p>
+                            <div class="project-links">
+                                <a href="https://sgrtiketiwebapp.vercel.app/" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> Live</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card" onclick="window.open('https://flutterai.dev/bibleask', '_blank')">
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="img/bible.png" alt="BibleASK"
-                                style="width:90%;height:180px;object-fit:contain;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.08);background:#fff;"
-                                loading="lazy">
+                    </article>
+
+                    <article class="project-card"
+                        onclick="window.open('https://flutterai.dev/bibleask', '_blank')">
+                        <div class="project-image">
+                            <img src="img/bible.png" alt="BibleASK" loading="lazy">
                         </div>
                         <div class="project-info">
+                            <span class="cat">AI application</span>
                             <h3>BibleASK</h3>
-                            <p>AI-powered Bible study assistant</p>
-                            <a href="https://flutterai.dev/bibleask" class="btn-text" target="_blank">Learn More <i
-                                    class="fas fa-arrow-right"></i></a>
+                            <p>AI-powered Bible study assistant that answers questions in plain language.</p>
+                            <div class="project-links">
+                                <a href="https://flutterai.dev/bibleask" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> Live</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card" onclick="window.open('https://flutterai.dev/ulizabiblia', '_blank')">
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="img/ulizabiblia.png" alt="UlizaBiblia"
-                                style="width:90%;height:180px;object-fit:contain;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.08);background:#fff;"
-                                loading="lazy">
+                    </article>
+
+                    <article class="project-card"
+                        onclick="window.open('https://flutterai.dev/ulizabiblia', '_blank')">
+                        <div class="project-image">
+                            <img src="img/ulizabiblia.png" alt="UlizaBiblia" loading="lazy">
                         </div>
                         <div class="project-info">
+                            <span class="cat">AI application</span>
                             <h3>UlizaBiblia</h3>
-                            <p>Interactive Bible exploration tool</p>
-                            <a href="https://flutterai.dev/ulizabiblia" class="btn-text" target="_blank">Learn More <i
-                                    class="fas fa-arrow-right"></i></a>
+                            <p>Interactive Bible exploration tool in Swahili and English.</p>
+                            <div class="project-links">
+                                <a href="https://flutterai.dev/ulizabiblia" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> Live</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card" onclick="window.open('https://flutterai.dev/flutter_aiweb', '_blank')">
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="img/flutter.png" alt="FlutterAI"
-                                style="width:90%;height:180px;object-fit:contain;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.08);background:#fff;"
-                                loading="lazy">
+                    </article>
+
+                    <article class="project-card"
+                        onclick="window.open('https://flutterai.dev/flutter_aiweb', '_blank')">
+                        <div class="project-image">
+                            <img src="img/flutter.png" alt="FlutterAI" loading="lazy">
                         </div>
                         <div class="project-info">
+                            <span class="cat">Developer tool</span>
                             <h3>FlutterAI</h3>
-                            <p>AI-powered Flutter development tool</p>
-                            <a href="https://flutterai.dev/flutter_aiweb" class="btn-text" target="_blank">Learn More <i
-                                    class="fas fa-arrow-right"></i></a>
+                            <p>AI-powered assistant that speeds up building Flutter apps.</p>
+                            <div class="project-links">
+                                <a href="https://flutterai.dev/flutter_aiweb" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> Live</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card" onclick="window.open('https://silabu.com', '_blank')">
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="img/ai.png" alt="SATU (Silabu's AI Tutor)"
-                                style="width:90%;height:180px;object-fit:contain;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.08);background:#fff;"
-                                loading="lazy">
+                    </article>
+
+                    <article class="project-card"
+                        onclick="window.open('https://silabu.com', '_blank')">
+                        <div class="project-image">
+                            <img src="img/ai.png" alt="SATU — Silabu's AI Tutor" loading="lazy">
                         </div>
                         <div class="project-info">
-                            <h3>SATU (Silabu's AI Tutor)</h3>
-                            <p>AI-driven educational platform</p>
-                            <a href="https://silabu.com" class="btn-text" target="_blank">Learn More <i
-                                    class="fas fa-arrow-right"></i></a>
+                            <span class="cat">EdTech · AI</span>
+                            <h3>SATU — Silabu's AI Tutor</h3>
+                            <p>AI-driven tutoring built for Silabu's learning platform.</p>
+                            <div class="project-links">
+                                <a href="https://silabu.com" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> silabu.com</a>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -340,33 +356,29 @@
         <section id="saas">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our SaaS Solutions</h2>
-                    <div class="underline"></div>
+                    <span class="eyebrow">04 — SaaS</span>
+                    <h2>Platforms we run</h2>
                 </div>
                 <div class="project-grid">
-                    <div class="project-card" style="position:relative;"
+                    <article class="project-card"
                         onclick="window.open('https://tournestcrm.com', '_blank')">
-                        <span
-                            style="position:absolute;top:15px;left:15px;background:linear-gradient(90deg,#4e54c8,#8f94fb);color:#fff;padding:4px 12px;border-radius:20px;font-size:0.85em;font-weight:600;z-index:2;box-shadow:0 2px 8px rgba(78,84,200,0.15);letter-spacing:1px;">NEW</span>
-                        <div class="project-image"
-                            style="background: none; padding: 0; display:flex;align-items:center;justify-content:center;">
-                            <img src="img/tournestcrm.png" alt="TourNeST CRM"
-                                style="width:90%;height:180px;object-fit:contain;display:block;border-radius:12px;box-shadow:0 2px 12px rgba(78,84,200,0.08);background:#fff;"
-                                loading="lazy">
+                        <span class="card-badge">Live</span>
+                        <div class="project-image">
+                            <img src="img/tournestcrm.png" alt="TourNeST CRM" loading="lazy">
                         </div>
                         <div class="project-info">
+                            <span class="cat">SaaS · Tourism</span>
                             <h3>TourNeST CRM</h3>
-                            <p>Complete tourism business management solution with booking system, customer management, and analytics.</p>
-                            <div style="display:flex;gap:10px;">
-                                <a href="https://tournestcrm.com" class="btn-primary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;"
-                                    target="_blank"><i class="fas fa-globe"></i> Visit Platform</a>
-                                <a href="https://tournestcrm.com/api/docs" class="btn-secondary"
-                                    style="display:flex;align-items:center;gap:7px;font-size:0.9em;padding:8px 16px;border-width:2px;"
-                                    target="_blank"><i class="fas fa-code"></i> API Docs</a>
+                            <p>Complete tourism business management — bookings, customer management, and analytics in
+                                one platform.</p>
+                            <div class="project-links">
+                                <a href="https://tournestcrm.com" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-globe"></i> Visit platform</a>
+                                <a href="https://tournestcrm.com/api/docs" target="_blank" rel="noopener"
+                                    onclick="event.stopPropagation()"><i class="fas fa-code"></i> API docs</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -374,8 +386,8 @@
         <section id="clients">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our Clients</h2>
-                    <div class="underline"></div>
+                    <span class="eyebrow">05 — Clients</span>
+                    <h2>Who we work with</h2>
                 </div>
                 <div class="clients-grid">
                     <div class="client-card">
@@ -397,35 +409,38 @@
         <section id="contact">
             <div class="container">
                 <div class="section-header">
-                    <h2>Contact Us</h2>
-                    <div class="underline"></div>
+                    <span class="eyebrow">06 — Contact</span>
+                    <h2>Let's build something</h2>
                 </div>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <p>Ready to bring your software ideas to life? Get in touch with Godopetza Labs today!</p>
+                        <p>Ready to bring your software idea to life? Tell us what you're building — we read
+                            everything.</p>
                         <div class="contact-methods">
                             <div class="contact-method">
                                 <i class="fas fa-envelope"></i>
-                                <a href="mailto:andrewbenard7+godopetzalabs@gmail.com">Email Us</a>
+                                <a href="mailto:andrewbenard7+godopetzalabs@gmail.com">andrewbenard7+godopetzalabs@gmail.com</a>
                             </div>
                             <div class="contact-method">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <p>Dar es Salaam, Tanzania</p>
+                                <span>Dar es Salaam, Tanzania</span>
                             </div>
                         </div>
                     </div>
                     <div class="contact-form">
-                        <form>
+                        <form action="mailto:andrewbenard7+godopetzalabs@gmail.com" method="post"
+                            enctype="text/plain">
                             <div class="form-group">
-                                <input type="text" placeholder="Your Name" required>
+                                <input type="text" name="name" placeholder="Your name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Your Email" required>
+                                <input type="email" name="email" placeholder="Your email" required>
                             </div>
                             <div class="form-group">
-                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                                <textarea name="message" placeholder="Tell us about your project" rows="5"
+                                    required></textarea>
                             </div>
-                            <button type="submit" class="btn-primary">Send Message</button>
+                            <button type="submit" class="btn-primary">Send message</button>
                         </form>
                     </div>
                 </div>
@@ -438,30 +453,33 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2>Godopetza<span>Labs</span></h2>
-                    <p>Innovative Software Solutions for East Africa</p>
+                    <p>A software studio building for East Africa, from Dar es Salaam.</p>
                 </div>
                 <div class="footer-links">
-                    <h3>Quick Links</h3>
+                    <h3>Explore</h3>
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#projects">Work</a></li>
                         <li><a href="#saas">SaaS</a></li>
                         <li><a href="#clients">Clients</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h3>Connect With Us</h3>
+                    <h3>Connect</h3>
                     <div class="social-icons">
-                        <a href="https://x.com/godopetza" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/benard-andrew-5b29069b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/godopetza" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/godopetza" target="_blank" rel="noopener" aria-label="X"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/benard-andrew-5b29069b/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/godopetza" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Godopetza Labs Company Limited. All rights reserved.</p>
+                <p>© <span id="year">2026</span> Godopetza Labs Company Limited · Dar es Salaam 🇹🇿</p>
             </div>
         </div>
     </footer>
