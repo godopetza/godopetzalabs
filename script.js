@@ -13,15 +13,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Mobile nav: close on link click or outside click
   const navToggle = document.getElementById("nav-toggle");
+  const navLabel = document.querySelector(".nav-toggle-label");
+  function syncNavState() {
+    if (navLabel && navToggle) {
+      navLabel.setAttribute("aria-expanded", String(navToggle.checked));
+      navLabel.setAttribute("aria-label", navToggle.checked ? "Close menu" : "Open menu");
+    }
+  }
+  if (navToggle) navToggle.addEventListener("change", syncNavState);
+  syncNavState();
   document.querySelectorAll("nav ul a").forEach((a) =>
     a.addEventListener("click", () => {
-      if (navToggle) navToggle.checked = false;
+      if (navToggle) {
+        navToggle.checked = false;
+        syncNavState();
+      }
     })
   );
   document.addEventListener("click", (e) => {
     if (navToggle && navToggle.checked && !e.target.closest("nav")) {
       navToggle.checked = false;
+      syncNavState();
     }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navToggle && navToggle.checked) {
+      navToggle.checked = false;
+      syncNavState();
+      navToggle.focus();
+    }
+  });
+
+  // Existing cards open their project on click; expose that behavior to keyboards too.
+  document.querySelectorAll(".project-card[onclick]").forEach((card) => {
+    card.setAttribute("tabindex", "0");
+    card.setAttribute("role", "link");
+    card.addEventListener("keydown", (e) => {
+      if ((e.key === "Enter" || e.key === " ") && !e.target.closest("a")) {
+        e.preventDefault();
+        card.click();
+      }
+    });
   });
 
   // Scroll reveal
