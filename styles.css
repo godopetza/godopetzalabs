@@ -1,4 +1,20 @@
 /* Godopetza Labs — coastal technical studio identity */
+@font-face {
+    font-family: "DM Sans";
+    src: url("fonts/dm-sans-latin.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Syne";
+    src: url("fonts/syne-latin.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 600 800;
+    font-display: swap;
+}
+
 :root {
     --paper: #f5f7f2;
     --paper-blue: #e9f3f2;
